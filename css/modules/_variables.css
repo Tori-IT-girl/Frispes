@@ -1,0 +1,38 @@
+:root {
+/* size */
+    --container__max: 1210px;
+    --container__padding: 50px;
+    --section__padding: 56px;
+    --small__padding: 15px;
+
+/* font */
+    --font-fam__main: 'Lato';
+    --font-fam__second: 'Lora';
+    --font-weight: 500;
+    --font-size: 100%;
+    --line-height: 1.5;
+
+/* colors */
+    --white: #fff;
+    --black: #000;
+    --orange: #FF5722;
+    --grenadier: #DD2C00;
+    --ebony-clay: #222831;
+    --blue-zodiac: #10375C;
+    --blue-zodiac-2: #0D2C4A;
+    --dusty-gray: #9A9A9A;
+    --alto: #DFDFDF;
+    --dove-gray: #6A6A6A;
+    --alabaster: #F8F8F8;
+
+    --transparent__white-5: rgba(255, 255, 255, 0.5);
+    --transparent__black-15: rgba(0, 0, 0, 0.15);
+    --transparent__gray-85: rgba(248, 248, 248, 0.85);
+    --transaparent__mercury-5: rgba(223, 223, 223, 0.5);
+
+    --shadow: rgba(255, 87, 34, 0.32);
+
+/* transition */
+    --short: 0.3s ease;
+    --middle: 0.5s;
+}

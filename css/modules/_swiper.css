@@ -1,0 +1,137 @@
+/* NAVIGATION  */
+
+.swiper-navigation {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: -65px;
+    right: 0;
+    margin-bottom: 52px;
+}
+
+.swiper-btn {
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 4px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.swiper-btn:focus {
+    outline-offset: 15px;
+}
+
+.swiper-btn--prev {
+    width: 50px;
+    background-color: var(--dusty-gray);
+    margin-right: 23px;
+}
+
+.swiper-btn--next {
+    width: 88px;
+    background-color: var(--orange);
+}
+
+.swiper-btn--prev::before,
+.swiper-btn--prev::after,
+.swiper-btn--next::before,
+.swiper-btn--next::after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 3.5px;
+    border-radius: 50px;
+    background-color: inherit;
+}
+
+.swiper-btn--prev::before {
+    top: -5px;
+    left: -3px;
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}
+
+.swiper-btn--prev::after {
+    bottom: -6px;
+    left: -2px;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.swiper-btn--next::before {
+    top: -6px;
+    right: -4px;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.swiper-btn--next::after {
+    bottom: -5px;
+    right: -4px;
+    -webkit-transform: rotate(-50deg);
+    -ms-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}
+
+/* PROGRESS AND PAGINATION */
+
+.swiper-progressbar {
+    height: 6px;
+    background-color: var(--grenadier);
+}
+
+.progress-container {
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 6px;
+    margin-bottom: 10px;
+    background: var(--alto);
+}
+
+.swiper-page {
+    font-size: 1.125rem;
+    color: var(--ebony-clay);
+}
+
+.swiper-page--total {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--dusty-gray);
+}
+
+
+/* IMG  */
+
+.slide-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@media (max-width: 414px) {
+    .swiper-navigation {
+        display: none;
+    }
+
+    .progress-container {
+        width: 100px;
+    }
+
+    .swiper-page {
+        font-size: 1rem;
+    }
+}

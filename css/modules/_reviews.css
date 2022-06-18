@@ -1,0 +1,129 @@
+.reviews {
+    padding-top: var(--section__padding);
+    padding-bottom: 102px;
+    position: relative;
+}
+
+.reviews__title {
+    width: 399px;
+    margin-bottom: 56px;
+}
+
+.reviews__bottom {
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+
+/* ===================== SWIPER ===================== */
+
+
+.reviews__swiper {
+    position: relative;
+}
+
+.reviews__swiper .swiper-navigation {
+    right: 19%
+}
+
+.reviews__swiper-container {
+    overflow: hidden;
+}
+
+.reviews__swiper-slide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 393px;
+    padding: 47px 40px 35px;
+    color: var(--white);
+    background-color: var(--blue-zodiac);
+}
+
+.reviews__swiper-text {
+    margin-bottom: 0;
+    overflow: auto;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.reviews__swiper-customer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.reviews__swiper-customer-photo {
+    margin-right: 16px;
+}
+
+.reviews__swiper-customer-icon {
+    display: block;
+    border-radius: 50px;
+}
+
+.reviews__swiper-customer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.reviews__swiper-customer-name {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.reviews__custom-pagination .progress-container {
+    position: relative;
+    overflow: hidden;
+    top: 32px;
+    left: 68%;
+    width: 160px;
+    height: 6px;
+    background: var(--alto);
+}
+
+@media (max-width: 414px) {
+    .reviews {
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+
+    .reviews__title {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .reviews__bottom {
+        left: 15px;
+    }
+
+    .reviews__swiper-slide {
+        height: 350px;
+        padding: 32px 35px 30px
+    }
+
+    .reviews__custom-pagination.js-reviews-fraction.swiper-pagination-custom.swiper-pagination-horizontal {
+        width: 100%;
+    }
+
+    .reviews__custom-pagination .progress-container {
+        left: 35%;
+        width: 100px;
+    }
+}

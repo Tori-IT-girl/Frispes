@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frispes. Revolutionary co-working space</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/swiper.min.js" defer></script>
+    <script src="js/burger.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/hero.js" defer></script>
+    <script src="js/spaces.js" defer></script>
+    <script src="js/facilities.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+    <script src="js/reviews.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo logo" href="#">
+                    <img src="img/logo.svg" alt="Frispes logo">
+                </a>
+
+                <button class="header__burger burger js-burger" type="button">
+                    <span class="burger__line"></span>
+                </button>
+
+                <div class="header__right js-nav-wrap">
+                    <nav class="header__nav">
+                        <ul class="header__list reset-list">
+                            <li class="header__item">
+                                <a class="header__link link link--nav" href="#">Home</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link link link--nav" href="#">Workspace</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link link link--nav" href="#">Service</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link link link--nav" href="#">Events</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link link link--nav" href="#">Reviews</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__link link link--nav" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__account">
+                        <a class="btn btn--transparent" href="#">Log In</a>
+                        <a class="btn btn--fill" href="#">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h3 class="title title--third">Introducing</h3>
+
+                <div class="hero__content">
+                    <h2 class="hero__title title title--second"><span class="hero__title--accent">Revolutionary</span>
+                        co-working space
+                        to&nbsp;realize your innovation</h2>
+                    <div class="hero__right">
+                        <p class="hero__text text text--gray">
+                            In&nbsp;frispes, we&nbsp;spearhead new initiatives and provide mentorship to&nbsp;a&nbsp;new
+                            startup, and
+                            help grow their opportunities in&nbsp;key local, regional and global markets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hero__swiper">
+                    <div class="swiper-container hero__swiper-container js-hero-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide hero__swiper-slide">
+                                <picture>
+                                    <source srcset="img/hero/slide-1.jpeg" media="(max-width: 992px)">
+                                    <img class="slide-img" src="img/hero/slide-1.jpeg" alt="Office space 1">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide hero__swiper-slide">
+                                <picture>
+                                    <source srcset="img/hero/tablet/slide-2.jpeg" media="(max-width: 992px)">
+                                    <img class="slide-img" src="img/hero/slide-2.jpeg" alt="Office space 2">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide hero__swiper-slide">
+                                <picture>
+                                    <source srcset="img/hero/tablet/slide-3.jpeg" media="(max-width: 992px)">
+                                    <img class="slide-img" src="img/hero/slide-3.jpeg" alt="Office space 3">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide hero__swiper-slide">
+                                <picture>
+                                    <source srcset="img/hero/tablet/slide-4.jpeg" media="(max-width: 992px)">
+                                    <img class="slide-img" src="img/hero/slide-4.jpeg" alt="Office space 4">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="hero__swiper-pagination js-swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="spaces">
+            <div class="container">
+                <div class="spaces__content">
+                    <h2 class="spaces__title title title--second">Our Spaces</h2>
+                    <div class="spaces__right">
+                        <p class="spaces__text text text--gray">
+                            Our space is&nbsp;designed to&nbsp;give you a&nbsp;different experience when working with
+                            your team
+                            or&nbsp;personally
+                        </p>
+                    </div>
+                </div>
+
+                <div class="spaces__swiper">
+                    <div class="swiper-navigation">
+                        <button class="swiper-btn swiper-btn--prev js-swiper-prev" aria-label="Previous slide"></button>
+                        <button class="swiper-btn swiper-btn--next js-swiper-next" aria-label="Next slide"></button>
+                    </div>
+
+                    <div class="swiper-container spaces__swiper-container js-spaces-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide spaces__swiper-slide" href="#">
+                                <div class="spaces__swiper-content">
+                                    <div class="spaces__swiper-cover">
+                                        <picture>
+                                            <img class="slide-img" src="img/spaces/slide-1.jpeg" alt="Team meeting">
+                                        </picture>
+                                        <span class="spaces__swiper-cover-icon btn btn--orange"></span>
+                                        <!-- HOVER -->
+                                        <div class="spaces__swiper-info">
+                                            <h3 class="spaces__swiper-title title">Working with team</h3>
+                                            <p class="spaces__swiper-descr">
+                                                Full speed wifi, Free coffe &amp;&nbsp;Snack and many more
+                                            </p>
+                                            <a class="spaces__swiper-link" href="#">Check availability</a>
+                                        </div>
+                                    </div>
+                                    <span class="spaces__swiper-text">Working with team</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide spaces__swiper-slide" href="#">
+                                <div class="spaces__swiper-content">
+                                    <div class="spaces__swiper-cover">
+                                        <picture>
+                                            <img class="slide-img" src="img/spaces/slide-2.jpeg"
+                                                alt="A woman at the workplace">
+                                        </picture>
+                                        <span class="spaces__swiper-cover-icon btn btn--orange"></span>
+                                        <!-- HOVER -->
+                                        <div class="spaces__swiper-info">
+                                            <h3 class="spaces__swiper-title title">Private Space</h3>
+                                            <p class="spaces__swiper-descr">
+                                                Comfortable space, Full speed wifi, Free coffe &amp;&nbsp;Snack
+                                                and many more
+                                            </p>
+                                            <a class="spaces__swiper-link" href="#">Check availability</a>
+                                        </div>
+                                    </div>
+                                    <span class="spaces__swiper-text">Private Space</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide spaces__swiper-slide" href="#">
+                                <div class="spaces__swiper-content">
+                                    <div class="spaces__swiper-cover">
+                                        <picture>
+                                            <img class="slide-img" src="img/spaces/slide-3.jpeg"
+                                                alt="An office worker at the computer desk">
+                                        </picture>
+                                        <span class="spaces__swiper-cover-icon btn btn--orange"></span>
+                                        <!-- HOVER -->
+                                        <div class="spaces__swiper-info">
+                                            <h3 class="spaces__swiper-title title">Custom Office</h3>
+                                            <p class="spaces__swiper-descr">
+                                                Comfortable space, Full speed wifi
+                                            </p>
+                                            <a class="spaces__swiper-link" href="#">Check availability</a>
+                                        </div>
+                                    </div>
+                                    <span class="spaces__swiper-text">Custom Office</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide spaces__swiper-slide" href="#">
+                                <div class="spaces__swiper-content">
+                                    <div class="spaces__swiper-cover">
+                                        <picture>
+                                            <img class="slide-img" src="img/spaces/empty-slide.jpeg" alt="">
+                                        </picture>
+                                        <span class="spaces__swiper-cover-icon btn btn--orange"></span>
+                                        <!-- HOVER -->
+                                        <div class="spaces__swiper-info">
+                                            <h3 class="spaces__swiper-title title">Space 4</h3>
+                                            <p class="spaces__swiper-descr">
+                                                Comfortable space, Full speed wifi, Free coffe &amp;&nbsp;Snack
+                                                and many more
+                                            </p>
+                                            <a class="spaces__swiper-link" href="#">Check availability</a>
+                                        </div>
+                                    </div>
+                                    <span class="spaces__swiper-text">Space 4</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide spaces__swiper-slide" href="#">
+                                <div class="spaces__swiper-content">
+                                    <div class="spaces__swiper-cover">
+                                        <picture>
+                                            <img class="slide-img" src="img/spaces/empty-slide.jpeg" alt="">
+                                        </picture>
+                                        <span class="spaces__swiper-cover-icon btn btn--orange"></span>
+                                        <!-- HOVER -->
+                                        <div class="spaces__swiper-info">
+                                            <h3 class="spaces__swiper-title title">Space 5</h3>
+                                            <p class="spaces__swiper-descr">
+                                                Comfortable space, Full speed wifi, Free coffe &amp;&nbsp;Snack
+                                                and many more
+                                            </p>
+                                            <a class="spaces__swiper-link" href="#">Check availability</a>
+                                        </div>
+                                    </div>
+                                    <span class="spaces__swiper-text">Space 5</span>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide spaces__swiper-slide" href="#">
+                                <div class="spaces__swiper-content">
+                                    <div class="spaces__swiper-cover">
+                                        <picture>
+                                            <img class="slide-img" src="img/spaces/empty-slide.jpeg" alt="">
+                                        </picture>
+                                        <span class="spaces__swiper-cover-icon btn btn--orange"></span>
+                                        <!-- HOVER -->
+                                        <div class="spaces__swiper-info">
+                                            <h3 class="spaces__swiper-title title">Space 6</h3>
+                                            <p class="spaces__swiper-descr">
+                                                Comfortable space, Full speed wifi, Free coffe &amp;&nbsp;Snack
+                                                and many more
+                                            </p>
+                                            <a class="spaces__swiper-link" href="#">Check availability</a>
+                                        </div>
+                                    </div>
+                                    <span class="spaces__swiper-text">Space 6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spaces__custom-pagination js-swiper-fraction">
+                        <div class="swiper-progressbar"></div>
+                        <div class="swiper-page"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__content">
+
+                    <div class="about__left">
+                        <ul class="about__list reset-list">
+                            <li class="about__item">
+                                <div class="about__item-wrap about__icon about__icon-1">
+                                    <span class="about__number">500+</span>
+                                    <span class="about__text text text--gray">Meeting rooms</span>
+                                </div>
+                                <div class="about__item-wrap about__icon about__icon-2">
+                                    <span class="about__number">100+</span>
+                                    <span class="about__text text text--gray">Event spaces</span>
+                                </div>
+                            </li>
+                            <li class="about__item">
+                                <div class="about__item-wrap about__icon about__icon-3">
+                                    <span class="about__number">60+</span>
+                                    <span class="about__text text text--gray">Countries</span>
+                                </div>
+                                <div class="about__item-wrap about__icon about__icon-4">
+                                    <span class="about__number">500 Mbps</span>
+                                    <span class="about__text text text--gray">Internet speed</span>
+                                </div>
+                            </li>
+                            <li class="about__item">
+                                <div class="about__item-wrap about__icon about__icon-5">
+                                    <span class="about__number">5K+</span>
+                                    <span class="about__text text text--gray">Startup mentors</span>
+                                </div>
+                                <div class="about__item-wrap about__icon about__icon-6">
+                                    <span class="about__number">200+</span>
+                                    <span class="about__text text text--gray">Communities inside</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about__right">
+                        <h3 class="about__header title title--third">Why Frispes</h3>
+                        <h2 class="about__title title title--second">We revolutionize your workspace</h2>
+                        <p class="about__text">
+                            With a&nbsp;decade of&nbsp;insights and expertise, we&rsquo;re decided to&nbsp;reimagine
+                            co-working space,
+                            designed to&nbsp;help a&nbsp;new startup grow up&nbsp;and realize their ideas so&nbsp;they
+                            can give
+                            a&nbsp;positive impacts on&nbsp;many people
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facilities">
+            <div class="container">
+                <h3 class="title title--third">Our Facilities</h3>
+                <h2 class="facilities__title title title--second">All facilities are designed to&nbsp;meet all your
+                    needs</h2>
+
+                <div class="facilities__swiper">
+                    <div class="facilities__swiper-container js-facilities-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide facilities__swiper-slide">
+                                <img src="img/facilities/empty-slide.jpeg" class="slide-img" alt="">
+                            </div>
+                            <div class="swiper-slide facilities__swiper-slide">
+                                <img src="img/facilities/empty-slide.jpeg" class="slide-img" alt="">
+                            </div>
+                            <div class="swiper-slide facilities__swiper-slide">
+                                <img src="img/facilities/slide-3.jpeg" class="slide-img" alt="People in a cafe">
+                            </div>
+                            <div class="swiper-slide facilities__swiper-slide">
+                                <img src="img/facilities/empty-slide.jpeg" class="slide-img" alt="">
+                            </div>
+                            <div class="swiper-slide facilities__swiper-slide">
+                                <img src="img/facilities/empty-slide.jpeg" class="slide-img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination facilities__swiper-pagination js-facilities-pagination">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__content">
+                    <h3 class="title title--third">Frispes gallery</h3>
+                    <h2 class="gallery__title title title--second">Immersive beautiful co-working space gallery</h2>
+                </div>
+            </div>
+            <div class="gallery__bottom gallery__swiper">
+                <div class="swiper-navigation">
+                    <button class="swiper-btn swiper-btn--prev js-swiper-prev" aria-label="Previous slide"></button>
+                    <button class="swiper-btn swiper-btn--next js-swiper-next" aria-label="Next slide"></button>
+                </div>
+                <div class="swiper-container gallery__swiper-container js-gallery-swiper">
+                    <div class="swiper-wrapper gallery__swiper-wrapper">
+                        <div class="swiper-slide gallery__swiper-slide">
+                            <img class="slide-img" src="img/gallery/slide-1.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide gallery__swiper-slide">
+                            <img class="slide-img" src="img/gallery/slide-2.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide gallery__swiper-slide">
+                            <img class="slide-img" src="img/gallery/slide-3.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide gallery__swiper-slide">
+                            <img class="slide-img" src="img/gallery/slide-4.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="customers">
+            <div class="container">
+                <div class="customers__container">
+                    <h2 class="customers__title title title--second">Who uses Frispes?</h2>
+                    <p class="customers__text text text--gray">
+                        Big brands, small bussiness, new startuo and inividuals
+                    </p>
+                </div>
+            </div>
+
+            <ul class="customers__list reset-list">
+                <li class="customers__item">
+                    <a class="customers__link" href="https://www.google.com" target="_blank" aria-label="Google">
+                        <svg width="120" height="41" viewBox="0 0 120 41" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_6596)">
+                                <path
+                                    d="M116.262 24.7259L119.591 26.9618C118.511 28.5651 115.927 31.3158 111.459 31.3158C105.911 31.3158 101.779 26.9912 101.779 21.4898C101.779 15.6354 105.954 11.6638 110.992 11.6638C116.058 11.6638 118.54 15.7237 119.343 17.9154L119.781 19.0333L106.728 24.4759C107.721 26.447 109.269 27.4472 111.459 27.4472C113.649 27.4472 115.167 26.3587 116.262 24.7259ZM106.027 21.1809L114.744 17.5329C114.262 16.312 112.831 15.4442 111.123 15.4442C108.948 15.4442 105.925 17.3858 106.027 21.1809Z"
+                                    fill="#FF302F" />
+                                <path
+                                    d="M72.4465 21.4898C72.4465 27.153 68.0663 31.3158 62.6934 31.3158C57.3204 31.3158 52.9403 27.153 52.9403 21.4898C52.9403 15.7972 57.3204 11.6638 62.6934 11.6638C68.0663 11.6638 72.4465 15.7825 72.4465 21.4898ZM68.1685 21.4898C68.1685 17.9595 65.6281 15.5324 62.6788 15.5324C59.7295 15.5324 57.189 17.9595 57.189 21.4898C57.189 24.9907 59.7295 27.4472 62.6788 27.4472C65.6427 27.4472 68.1685 24.976 68.1685 21.4898Z"
+                                    fill="#FFBA40" />
+                                <path
+                                    d="M88.8574 12.4285H92.9163V29.9035C92.9163 37.1553 88.6676 40.1414 83.645 40.1414C78.9145 40.1414 76.0674 36.9347 75.0016 34.3311L78.7247 32.7719C79.3963 34.3752 81.017 36.2728 83.645 36.2728C86.8717 36.2728 88.8574 34.2576 88.8574 30.4919V29.0798H88.7114C87.7478 30.2566 85.9081 31.3156 83.572 31.3156C78.6955 31.3156 74.2278 27.0352 74.2278 21.5191C74.2278 15.9735 78.6955 11.6489 83.572 11.6489C85.8935 11.6489 87.7478 12.6933 88.7114 13.8407H88.8574V12.4285ZM89.1494 21.5191C89.1494 18.0476 86.8571 15.5175 83.9371 15.5175C80.9878 15.5175 78.5057 18.0476 78.5057 21.5191C78.5057 24.9464 80.9878 27.4323 83.9371 27.4323C86.8571 27.447 89.1494 24.9464 89.1494 21.5191Z"
+                                    fill="#3686F7" />
+                                <path
+                                    d="M51.1445 21.4455C51.1445 27.1086 46.7643 31.2715 41.3914 31.2715C36.0184 31.2715 31.6383 27.0939 31.6383 21.4455C31.6383 15.7528 36.0184 11.6047 41.3914 11.6047C46.7643 11.6047 51.1445 15.7528 51.1445 21.4455ZM46.8811 21.4455C46.8811 17.9151 44.3407 15.4881 41.3914 15.4881C38.4421 15.4881 35.9016 17.9151 35.9016 21.4455C35.9016 24.9463 38.4421 27.4028 41.3914 27.4028C44.3407 27.4028 46.8811 24.9463 46.8811 21.4455Z"
+                                    fill="#FF302F" />
+                                <path d="M95.486 1.64648H99.6909V30.4184H95.486V1.64648Z" fill="#20B15A" />
+                                <path
+                                    d="M15.6071 27.0058C9.4895 27.0058 4.70057 22.0339 4.70057 15.8706C4.70057 9.70729 9.4895 4.73545 15.6071 4.73545C18.9068 4.73545 21.3158 6.0446 23.0971 7.72149L26.0318 4.76486C23.5497 2.3672 20.2354 0.543213 15.6071 0.543213C7.22644 0.543213 0.174438 7.4273 0.174438 15.8706C0.174438 24.3139 7.22644 31.198 15.6071 31.198C20.1332 31.198 23.5497 29.6976 26.2216 26.9028C28.9665 24.1374 29.8133 20.2541 29.8133 17.1062C29.8133 16.1207 29.6965 15.1057 29.5651 14.3555H15.6071V18.4448H25.55C25.258 21.0042 24.4549 22.7547 23.2723 23.9462C21.8415 25.4024 19.5784 27.0058 15.6071 27.0058Z"
+                                    fill="#3686F7" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_6596">
+                                    <rect width="120" height="39.6694" fill="white" transform="translate(0 0.481934)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="customers__item">
+                    <a class="customers__link" href="https://www.tokopedia.com" target="_blank" aria-label="Tokopedia">
+                        <svg width="180" height="39" viewBox="0 0 180 39" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_6604)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M96.2326 27.074C94.2764 29.0322 91.9362 30.0165 89.2241 30.0165C87.0307 30.0165 85.1669 29.5755 83.2647 28.4852V23.9961C84.7952 25.02 86.7177 25.9949 88.6135 25.9949C92.5697 25.9949 94.9244 23.309 94.9244 19.5029C94.9244 15.6936 92.489 12.9281 88.5312 12.9281C86.7636 12.9281 85.3309 13.5552 84.2118 14.8115C83.012 16.1726 82.3918 18.118 82.3918 20.6901V38.4161H82.0938C79.9132 38.4161 78.1467 36.6729 78.1467 34.5225V20.0251C78.1467 13.873 81.9592 8.90595 88.512 8.90595C91.7476 8.90595 94.3753 9.99726 96.3678 12.1899C98.2412 14.2387 99.1696 16.8344 99.1696 19.9581C99.1696 22.7378 98.1899 25.1149 96.2326 27.074ZM142.196 26.9239C140.247 28.9874 137.74 30.0165 134.7 30.0165C131.491 30.0165 128.876 28.9252 126.885 26.7326C125.013 24.6585 124.084 22.0607 124.084 18.9649C124.084 13.4851 128.371 8.90595 134.013 8.90595C136.19 8.90595 138.079 9.35912 139.988 10.3919V14.9269C138.458 13.903 136.536 12.9281 134.64 12.9281C130.684 12.9281 128.328 15.6135 128.328 19.4212C128.328 23.1767 130.821 25.9949 134.721 25.9949C136.487 25.9949 137.941 25.342 139.105 24.0267C140.261 22.7199 140.862 20.7997 140.862 18.2203V4.11125C140.862 1.96025 142.629 0.217635 144.809 0.217635H145.107V18.8821C145.107 22.1692 144.143 24.8598 142.196 26.9239ZM154.184 6.91356C153.738 7.40573 153.1 7.63231 152.321 7.63231C150.863 7.63231 149.821 6.5721 149.821 5.14565C149.821 3.68548 150.844 2.70009 152.321 2.70009C153.742 2.70009 154.821 3.73923 154.821 5.14565C154.821 5.84122 154.614 6.43773 154.184 6.91356ZM175.754 18.2203C175.754 16.5693 175.121 15.2625 173.849 14.2724C172.703 13.3813 171.272 12.9281 169.53 12.9281C165.688 12.9281 163.221 15.8912 163.221 19.5445C163.221 23.0608 165.836 25.9949 169.49 25.9949C172.032 25.9949 173.391 24.5305 174.84 22.7062V27.9662C174.102 28.5121 173.252 29.107 172.385 29.4564C171.47 29.8331 170.378 30.0165 169.116 30.0165C163.005 30.0165 158.976 25.0242 158.976 19.2552C158.976 16.2927 159.909 13.8434 161.787 11.9338C163.779 9.90978 166.393 8.90595 169.593 8.90595C175.66 8.90595 180 12.3422 180 18.5512V29.6029H179.703C177.521 29.6029 175.754 27.8597 175.754 25.7087V18.2203ZM117.641 17.0341C117.104 15.3974 116.432 14.5922 114.885 13.7402C111.206 11.7125 107.585 13.4388 105.901 17.0183L117.641 17.0341ZM114.401 29.9549C111.69 30.5234 109.029 30.085 106.433 28.6538C103.901 27.259 102.205 25.1844 101.355 22.4432C99.637 16.8992 103.157 10.7213 108.819 9.22528C111.626 8.48386 114.316 8.81953 116.873 10.2286C121.119 12.5703 122.667 16.1921 122.397 20.8587L105.293 20.825C105.546 22.7283 106.742 24.2175 108.423 25.1438C110.128 26.0834 111.695 26.3079 113.149 25.8631C114.764 25.3631 116.073 24.0631 117.139 22.8532L120.624 25.3583C119.203 27.8676 117.267 29.3531 114.401 29.9549V29.9549ZM150.198 9.32013H154.443V29.6029H154.144C151.966 29.6029 150.198 27.8597 150.198 25.7087V9.32013ZM6.21259 29.6028C2.06036 29.6028 0 26.8168 0 22.9263V8.16601C0 6.01553 1.76762 4.27239 3.94764 4.27239H4.24571V9.32002H11.4182V13.3422H4.24571V23.3922C4.24571 25.101 5.01868 25.5811 6.67413 25.5811H11.4182V29.6028H6.21259ZM30.8669 27.0392C28.7697 29.0226 26.2489 30.0164 23.3204 30.0164C20.4193 30.0164 17.9129 29.0215 15.8157 27.0392C13.7115 25.0484 12.6624 22.5148 12.6624 19.4617C12.6624 13.505 17.2735 8.90637 23.3204 8.90637C26.2227 8.90637 28.736 9.90862 30.8461 11.9058C32.9636 13.9087 34.0213 16.4349 34.0213 19.4617C34.0213 22.5148 32.9711 25.0484 30.8669 27.0392ZM50.7146 14.2006C50.0917 15.2308 49.6088 15.9696 49.2691 16.4159C48.8946 16.9012 48.525 17.2891 48.1585 17.5573C51.1088 18.4973 52.2076 20.5134 52.2076 23.517V29.6028H51.9096C49.7296 29.6028 47.9619 27.8596 47.9619 25.7086V23.9302C47.9619 21.9852 47.0779 20.6657 44.9886 20.6657H41.1334V29.6028H40.8353C38.6553 29.6028 36.8893 27.8596 36.8893 25.7086V4.11115C36.8893 1.96015 38.6553 0.217529 40.8353 0.217529H41.1334V16.6024H42.3882C43.767 16.6024 44.6729 16.1371 45.1932 15.2571L48.7589 9.32108L53.596 9.31633L50.7146 14.2006ZM72.6285 27.0392C70.5308 29.0226 68.0099 30.0164 65.0815 30.0164C62.1809 30.0164 59.6745 29.0215 57.5768 27.0392C55.4726 25.0484 54.4235 22.5148 54.4235 19.4617C54.4235 13.505 59.0345 8.90637 65.0815 8.90637C67.9843 8.90637 70.4971 9.90862 72.6077 11.9058C74.7252 13.9087 75.7824 16.4349 75.7824 19.4617C75.7824 22.5148 74.7327 25.0484 72.6285 27.0392ZM69.5644 14.7413C68.394 13.534 66.9085 12.928 65.0815 12.928C61.175 12.928 58.8364 15.7377 58.8364 19.4617C58.8364 23.134 61.2306 25.9948 65.0815 25.9948C68.9341 25.9948 71.3272 23.134 71.3272 19.4617C71.3272 17.5119 70.7332 15.9474 69.5644 14.7413ZM27.8028 14.7413C26.6329 13.534 25.1468 12.928 23.3204 12.928C19.4139 12.928 17.0753 15.7377 17.0753 19.4617C17.0753 23.134 19.4695 25.9948 23.3204 25.9948C27.1725 25.9948 29.5656 23.134 29.5656 19.4617C29.5656 17.5119 28.9721 15.9474 27.8028 14.7413Z"
+                                    fill="#42B549" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_6604">
+                                    <rect width="180" height="38.5714" fill="white"
+                                        transform="translate(0 0.0310059)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="customers__item">
+                    <a class="customers__link" href="https://www.upwork.com" target="_blank" aria-label="Upwork">
+                        <svg width="120" height="36" viewBox="0 0 120 36" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_6606)">
+                                <path
+                                    d="M32.3438 8.86022C27.8906 8.86022 24.4922 11.7789 23.0859 16.4487C20.9766 13.2966 19.4531 9.79419 18.3984 6.17505H13.5938V18.5502C13.5938 21.0018 11.6016 22.9865 9.14062 22.9865C6.67969 22.9865 4.6875 21.0018 4.6875 18.5502V6.2918H0V18.6669C0 23.687 4.10156 27.8899 9.25781 27.8899C14.4141 27.8899 18.5156 23.8038 18.5156 18.6669V16.5655C19.4531 18.5502 20.625 20.4181 21.9141 22.1693L18.9844 35.8286H23.9062L26.0156 25.9052C27.8906 27.1894 30.1172 27.8899 32.4609 27.8899C37.7344 27.8899 41.9531 23.687 41.9531 18.4334C41.8359 13.1798 37.6172 8.86022 32.3438 8.86022ZM32.3438 23.1033C30.3516 22.9865 28.4766 22.2861 26.9531 21.0018L27.3047 19.1339V19.0172C27.6562 17.0325 28.8281 13.6468 32.2266 13.6468C34.8047 13.5301 36.9141 15.6315 37.0312 18.1999C37.1484 20.7683 35.0391 22.8698 32.4609 22.9865L32.3438 23.1033Z"
+                                    fill="#6FDA44" />
+                                <path
+                                    d="M76.6406 8.86019C71.3672 8.86019 67.1484 13.0631 67.1484 18.3167C67.1484 23.5702 71.3672 27.7731 76.6406 27.7731C81.9141 27.7731 86.1328 23.5702 86.1328 18.3167C86.1328 13.0631 81.9141 8.86019 76.6406 8.86019ZM76.6406 23.9205C73.5938 23.9205 71.0156 21.4688 71.0156 18.3167C71.0156 15.1645 73.4766 12.7128 76.6406 12.7128C79.6875 12.7128 82.2656 15.1645 82.2656 18.1999C82.2656 21.3521 79.8047 23.9205 76.6406 23.9205ZM97.7344 13.4133C95.0391 13.4133 92.8125 15.6315 92.8125 18.3167V27.3061H88.7109V9.44392H92.8125V12.2458C93.9844 10.4946 95.9766 9.44392 98.0859 9.44392H99.375V13.4133H97.7344ZM56.4844 9.44392L59.5312 21.819L62.9297 9.44392H66.9141L61.7578 27.3061H57.6562L54.4922 14.8143L51.3281 27.3061H47.2266L42.0703 9.44392H46.0547L49.4531 21.819L52.6172 9.44392H56.4844ZM111.328 17.6162C114.375 15.9817 116.133 12.8296 116.133 9.32718H112.148C112.148 12.3626 109.688 14.6975 106.758 14.6975H106.172V0.804688H102.07V27.3061H106.172V18.9004H106.641C107.109 18.9004 107.578 19.1339 107.812 19.4841L113.555 27.3061H118.477L111.328 17.6162Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_6606">
+                                    <rect width="120" height="35.0239" fill="white" transform="translate(0 0.804688)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="customers__item">
+                    <a class="customers__link" href="https://www.microsoft.com" target="_blank" aria-label="Microsoft">
+                        <svg width="170" height="37" viewBox="0 0 170 37" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_6609)">
+                                <path d="M19.0547 19.2161H36.308V36.446H19.0547V19.2161Z" fill="#FFB900" />
+                                <path d="M0 19.2161H17.2533V36.446H0V19.2161Z" fill="#00A4EF" />
+                                <path
+                                    d="M60.0066 21.071L58.9933 23.9379H58.9089C58.74 23.2915 58.4304 22.3077 57.9238 21.1272L52.4917 7.49502H47.1721V29.2222H50.6903V15.8149C50.6903 14.9716 50.6903 14.016 50.6622 12.8355C50.634 12.2452 50.5777 11.7955 50.5496 11.4582H50.634C50.8029 12.3014 50.9999 12.9198 51.1407 13.3133L57.6705 29.1659H60.1473L66.6208 13.1727C66.7615 12.8073 66.9022 12.0765 67.043 11.4582H67.1274C67.043 13.0603 66.9867 14.4938 66.9585 15.3651V29.1378H70.7019V7.4388H65.5794L60.0066 21.071ZM74.2483 13.5662H77.9072V29.1378H74.2483V13.5662ZM76.1059 6.98908C75.4867 6.98908 74.9801 7.21394 74.5579 7.60745C74.1357 8.00095 73.9105 8.50689 73.9105 9.12525C73.9105 9.71551 74.1357 10.2214 74.5579 10.615C74.9801 11.0085 75.4867 11.2052 76.1059 11.2052C76.7251 11.2052 77.2599 10.9804 77.6539 10.615C78.0761 10.2214 78.3013 9.71551 78.3013 9.12525C78.3013 8.535 78.0761 8.02906 77.6539 7.60745C77.288 7.21394 76.7532 6.98908 76.1059 6.98908ZM90.8824 13.4257C90.2069 13.2852 89.5032 13.2009 88.8277 13.2009C87.1671 13.2009 85.6473 13.5662 84.3807 14.297C83.1142 15.0278 82.1009 16.0397 81.4536 17.3046C80.7781 18.5975 80.4403 20.0872 80.4403 21.8018C80.4403 23.2915 80.7781 24.6125 81.4254 25.8211C82.0728 27.0017 82.9734 27.9573 84.1837 28.6038C85.3377 29.2503 86.6887 29.5876 88.2085 29.5876C89.9536 29.5876 91.4453 29.2222 92.6274 28.5476L92.6556 28.5195V25.1466L92.5148 25.259C91.9801 25.6525 91.3609 25.9898 90.7416 26.1865C90.0943 26.4114 89.5032 26.5238 88.9966 26.5238C87.533 26.5238 86.3791 26.1022 85.5628 25.1747C84.7185 24.2752 84.2963 23.0385 84.2963 21.4926C84.2963 19.8905 84.7185 18.6256 85.591 17.6981C86.4635 16.7705 87.6175 16.2927 89.0248 16.2927C90.2069 16.2927 91.4171 16.6862 92.5148 17.4732L92.6556 17.5856V14.016L92.6274 13.9879C92.1489 13.7911 91.6142 13.5662 90.8824 13.4257ZM102.957 13.3133C102.056 13.3133 101.212 13.5944 100.48 14.1846C99.8609 14.6906 99.4387 15.4213 99.0728 16.2927H99.0446V13.5662H95.3857V29.1378H99.0446V21.1834C99.0446 19.8342 99.3261 18.7099 99.9453 17.8948C100.564 17.0516 101.353 16.63 102.31 16.63C102.647 16.63 102.985 16.7143 103.407 16.7705C103.801 16.8829 104.083 16.9954 104.28 17.1359L104.42 17.2483V13.5944L104.336 13.5662C104.083 13.3976 103.576 13.3133 102.957 13.3133ZM112.92 13.229C110.359 13.229 108.305 13.9879 106.869 15.4776C105.406 16.9673 104.702 19.0191 104.702 21.605C104.702 24.0223 105.434 25.9898 106.841 27.4233C108.248 28.8287 110.162 29.5595 112.555 29.5595C115.06 29.5595 117.058 28.8005 118.493 27.2827C119.957 25.7649 120.661 23.7412 120.661 21.2396C120.661 18.7661 119.985 16.7986 118.606 15.3651C117.283 13.9316 115.341 13.229 112.92 13.229ZM115.848 25.2028C115.172 26.0741 114.103 26.4957 112.78 26.4957C111.457 26.4957 110.387 26.0741 109.627 25.1466C108.867 24.2752 108.502 23.0104 108.502 21.4083C108.502 19.7499 108.896 18.4851 109.627 17.5856C110.387 16.6862 111.429 16.2365 112.752 16.2365C114.046 16.2365 115.06 16.6581 115.791 17.5294C116.523 18.4007 116.917 19.6656 116.917 21.3239C116.861 23.0104 116.551 24.3314 115.848 25.2028ZM128.823 20.031C127.669 19.5532 126.937 19.1878 126.599 18.8786C126.318 18.5975 126.177 18.204 126.177 17.6981C126.177 17.2764 126.346 16.8548 126.768 16.5738C127.19 16.2927 127.669 16.1521 128.372 16.1521C128.992 16.1521 129.639 16.2646 130.258 16.4332C130.877 16.6019 131.44 16.8548 131.891 17.1921L132.031 17.3046V13.8754L131.947 13.8473C131.525 13.6787 130.962 13.51 130.286 13.3695C129.611 13.2571 128.992 13.2009 128.485 13.2009C126.74 13.2009 125.305 13.6225 124.179 14.55C123.053 15.4213 122.518 16.6019 122.518 17.9791C122.518 18.7099 122.631 19.3564 122.884 19.8904C123.137 20.4245 123.503 20.9304 124.01 21.352C124.516 21.7456 125.248 22.1953 126.262 22.6169C127.106 22.9823 127.753 23.2634 128.147 23.4882C128.541 23.7131 128.795 23.966 128.992 24.1628C129.132 24.3877 129.217 24.6687 129.217 25.0341C129.217 26.0741 128.429 26.58 126.824 26.58C126.205 26.58 125.558 26.4676 124.798 26.2147C124.038 25.9617 123.334 25.5963 122.743 25.1747L122.603 25.0622V28.6319L122.687 28.66C123.222 28.913 123.869 29.0816 124.657 29.2784C125.445 29.4189 126.149 29.5313 126.768 29.5313C128.654 29.5313 130.202 29.1097 131.3 28.1822C132.425 27.2827 133.016 26.1303 133.016 24.6406C133.016 23.6006 132.735 22.6731 132.116 21.9704C131.3 21.2958 130.286 20.5931 128.823 20.031ZM142.67 13.229C140.109 13.229 138.055 13.9879 136.619 15.4776C135.184 16.9673 134.452 19.0191 134.452 21.605C134.452 24.0223 135.184 25.9898 136.591 27.4233C137.998 28.8287 139.912 29.5595 142.305 29.5595C144.81 29.5595 146.808 28.8005 148.243 27.2827C149.707 25.7649 150.411 23.7412 150.411 21.2396C150.411 18.7661 149.735 16.7986 148.356 15.3651C147.033 13.9316 145.091 13.229 142.67 13.229ZM145.569 25.2028C144.894 26.0741 143.824 26.4957 142.502 26.4957C141.151 26.4957 140.109 26.0741 139.349 25.1466C138.589 24.2752 138.223 23.0104 138.223 21.4083C138.223 19.7499 138.617 18.4851 139.349 17.5856C140.109 16.6862 141.151 16.2365 142.473 16.2365C143.74 16.2365 144.781 16.6581 145.513 17.5294C146.245 18.4007 146.639 19.6656 146.639 21.3239C146.639 23.0104 146.273 24.3314 145.569 25.2028ZM169.972 16.5738V13.5662H166.285V8.95661L166.172 8.98472L162.682 10.0247L162.598 10.0528V13.5662H157.081V11.5987C157.081 10.6993 157.306 9.99659 157.7 9.54687C158.094 9.09715 158.685 8.87229 159.417 8.87229C159.924 8.87229 160.459 8.98472 161.05 9.23768L161.19 9.32201V6.14585L161.106 6.11775C160.599 5.9491 159.924 5.83667 159.051 5.83667C157.954 5.83667 156.997 6.08964 156.124 6.51125C155.252 6.98908 154.604 7.63555 154.126 8.50689C153.647 9.35011 153.394 10.3058 153.394 11.402V13.5662H150.833V16.5456H153.394V29.1378H157.081V16.5738H162.598V24.5844C162.598 27.873 164.146 29.5313 167.242 29.5313C167.748 29.5313 168.283 29.447 168.79 29.3627C169.324 29.2503 169.718 29.1097 169.944 28.9973L169.972 28.9692V25.9617L169.831 26.0741C169.606 26.2147 169.409 26.3271 169.071 26.4114C168.79 26.4957 168.536 26.5238 168.339 26.5238C167.608 26.5238 167.101 26.3552 166.735 25.9336C166.397 25.5401 166.228 24.8936 166.228 23.9379V16.5738H169.972Z"
+                                    fill="#737373" />
+                                <path d="M19.0547 0.187256H36.308V17.4172H19.0547V0.187256Z" fill="#7FBA00" />
+                                <path d="M0 0.187256H17.2533V17.4172H0V0.187256Z" fill="#F25022" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_6609">
+                                    <rect width="170" height="36.2587" fill="white" transform="translate(0 0.187256)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="customers__item">
+                    <a class="customers__link" href="https://www.shopify.com" target="_blank" aria-label="Shopify">
+                        <svg width="146" height="47" viewBox="0 0 146 47" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_6615)">
+                                <path
+                                    d="M31.3149 9.95022C31.2911 9.73617 31.1006 9.64103 30.9577 9.64103C30.8149 9.64103 27.6953 9.4032 27.6953 9.4032C27.6953 9.4032 25.5282 7.23886 25.2663 7.0248C25.0281 6.78696 24.5757 6.85831 24.3851 6.90588C24.3613 6.90588 23.9089 7.04859 23.1706 7.28642C22.4324 5.16965 21.1703 3.24315 18.908 3.24315H18.6937C18.0745 2.4345 17.2648 2.05396 16.5981 2.05396C11.359 2.05396 8.83478 8.59454 8.04893 11.9243C6.00095 12.5665 4.54831 12.9946 4.38161 13.0659C3.23855 13.4227 3.21474 13.4465 3.07186 14.5167C2.95279 15.3254 -0.0239258 38.3245 -0.0239258 38.3245L23.1468 42.6532L35.7205 39.9418C35.7443 39.8942 31.3388 10.1643 31.3149 9.95022ZM21.8847 7.6194C21.3132 7.78589 20.6226 7.99994 19.932 8.23778V7.80967C19.932 6.52533 19.7653 5.47884 19.4557 4.6464C20.6464 4.78911 21.3846 6.09723 21.8847 7.6194ZM18.0031 4.90803C18.3126 5.71668 18.527 6.85831 18.527 8.42805V8.66589C17.241 9.07022 15.8836 9.47454 14.4786 9.92644C15.2645 6.92966 16.7647 5.45506 18.0031 4.90803ZM16.479 3.43342C16.7171 3.43342 16.9553 3.52856 17.1458 3.67126C15.455 4.45613 13.669 6.4302 12.9307 10.4259C11.8115 10.7827 10.7399 11.0919 9.71589 11.4248C10.5732 8.38049 12.7164 3.43342 16.479 3.43342Z"
+                                    fill="#95BF47" />
+                                <path
+                                    d="M18.9081 16.5384L17.384 21.1287C17.384 21.1287 16.0028 20.3914 14.3597 20.3914C11.9069 20.3914 11.7878 21.9373 11.7878 22.3179C11.7878 24.4109 17.265 25.2195 17.265 30.1428C17.265 34.0196 14.8121 36.5169 11.502 36.5169C7.50133 36.5169 5.50098 34.0434 5.50098 34.0434L6.57259 30.5233C6.57259 30.5233 8.6682 32.3309 10.4304 32.3309C11.5973 32.3309 12.0736 31.4271 12.0736 30.7612C12.0736 28.026 7.59658 27.9071 7.59658 23.3882C7.59658 19.6065 10.3113 15.9438 15.8123 15.9438C17.8603 15.92 18.9081 16.5384 18.9081 16.5384Z"
+                                    fill="white" />
+                                <path
+                                    d="M50.3899 25.1718C49.1277 24.5059 48.4848 23.9113 48.4848 23.1264C48.4848 22.1275 49.3897 21.4853 50.7947 21.4853C52.4378 21.4853 53.8905 22.1513 53.8905 22.1513L55.0335 18.655C55.0335 18.655 53.9857 17.8464 50.8899 17.8464C46.5797 17.8464 43.5791 20.3199 43.5791 23.7924C43.5791 25.7664 44.9841 27.2648 46.8416 28.3351C48.3657 29.1675 48.8896 29.7859 48.8896 30.6897C48.8896 31.6173 48.1276 32.3784 46.7225 32.3784C44.6508 32.3784 42.6742 31.3081 42.6742 31.3081L41.4597 34.8043C41.4597 34.8043 43.2696 36.0173 46.3177 36.0173C50.7471 36.0173 53.9619 33.8292 53.9619 29.9048C53.9143 27.7643 52.3188 26.2897 50.3899 25.1718ZM68.0596 17.7988C65.8688 17.7988 64.1542 18.8453 62.8444 20.415L62.7968 20.3913L64.7019 10.4971H59.7725L54.9621 35.7081H59.8915L61.5347 27.0983C62.1777 23.8399 63.8684 21.8183 65.4401 21.8183C66.5594 21.8183 66.988 22.5794 66.988 23.6497C66.988 24.3156 66.9404 25.1718 66.7737 25.8378L64.9162 35.7081H69.8457L71.7746 25.5286C71.9889 24.4583 72.1318 23.174 72.1318 22.294C72.108 19.4637 70.6553 17.7988 68.0596 17.7988ZM83.2766 17.7988C77.3232 17.7988 73.3939 23.1502 73.3939 29.12C73.3939 32.9254 75.7515 36.0173 80.1808 36.0173C86.0152 36.0173 89.9445 30.8086 89.9445 24.6962C89.9683 21.1523 87.9203 17.7988 83.2766 17.7988ZM80.8476 32.2595C79.1568 32.2595 78.4662 30.8324 78.4662 29.0248C78.4662 26.1945 79.9189 21.6042 82.6098 21.6042C84.3482 21.6042 84.9436 23.1264 84.9436 24.5772C84.9436 27.5978 83.4433 32.2595 80.8476 32.2595ZM102.59 17.7988C99.2556 17.7988 97.3743 20.748 97.3743 20.748H97.3267L97.6125 18.108H93.2308C93.0164 19.8918 92.6116 22.627 92.2306 24.6486L88.8252 42.7006H93.7547L95.1358 35.3989H95.2549C95.2549 35.3989 96.2789 36.0411 98.1364 36.0411C103.947 36.0411 107.733 30.0951 107.733 24.1016C107.709 20.7718 106.209 17.7988 102.59 17.7988ZM97.8744 32.307C96.5885 32.307 95.8264 31.5697 95.8264 31.5697L96.6361 26.9794C97.2076 23.8875 98.827 21.8659 100.542 21.8659C102.066 21.8659 102.518 23.2691 102.518 24.5772C102.542 27.7643 100.637 32.307 97.8744 32.307ZM114.758 10.735C113.187 10.735 111.925 11.9955 111.925 13.5891C111.925 15.0399 112.853 16.0626 114.258 16.0626H114.306C115.854 16.0626 117.164 15.0161 117.187 13.2085C117.211 11.7577 116.235 10.735 114.758 10.735ZM107.852 35.6843H112.782L116.116 18.1794H111.162L107.852 35.6843ZM128.689 18.1556H125.26L125.427 17.3469C125.713 15.6583 126.713 14.1837 128.38 14.1837C129.261 14.1837 129.952 14.4453 129.952 14.4453L130.904 10.5685C130.904 10.5685 130.071 10.1404 128.213 10.1404C126.475 10.1404 124.712 10.6398 123.379 11.7815C121.688 13.2085 120.902 15.2777 120.521 17.3707L120.378 18.1794H118.068L117.33 21.9134H119.64L117.021 35.7081H121.95L124.57 21.9134H127.975L128.689 18.1556ZM140.572 18.1794C140.572 18.1794 137.477 25.9567 136.119 30.214H136.072C135.976 28.8346 134.857 18.1794 134.857 18.1794H129.666L132.642 34.2097C132.69 34.5665 132.666 34.7806 132.523 35.0184C131.952 36.1362 130.976 37.2065 129.832 37.9914C128.904 38.6573 127.856 39.1092 127.022 39.3946L128.404 43.5806C129.404 43.3666 131.499 42.5341 133.238 40.893C135.476 38.8 137.572 35.5416 139.715 31.1178L145.74 18.1556H140.572V18.1794Z"
+                                    fill="black" />
+                                <path
+                                    d="M30.9577 9.59341C30.8148 9.59341 27.6952 9.35557 27.6952 9.35557C27.6952 9.35557 25.5282 7.19123 25.2662 6.97718C25.171 6.88204 25.0519 6.83447 24.9567 6.83447L23.2183 42.6531L35.7919 39.9417C35.7919 39.9417 31.3864 10.1642 31.3626 9.95017C31.2673 9.73612 31.1006 9.64098 30.9577 9.59341Z"
+                                    fill="#5E8E3E" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_6615">
+                                    <rect width="145.74" height="45.6652" fill="white"
+                                        transform="translate(0 0.484131)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li class="customers__item">
+                    <a class="customers__link" href="https://stripe.com" target="_blank" aria-label="Stripe">
+                        <svg width="109" height="46" viewBox="0 0 109 46" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M59.0856 10.7534H51.5884V36.9575H59.0856V10.7534Z" fill="#32325D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M43.5533 12.9698L43.0754 10.7536H36.6235V36.9577H44.091V19.1989C45.8533 16.8929 48.8402 17.3122 49.7662 17.6416V10.7536C48.8104 10.3943 45.3156 9.73543 43.5533 12.9698Z"
+                                fill="#32325D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M108.4 23.9604C108.4 16.2938 104.697 10.2444 97.6175 10.2444C90.5085 10.2444 86.2073 16.2938 86.2073 23.9005C86.2073 32.9147 91.2851 37.4667 98.5733 37.4667C102.128 37.4667 104.816 36.6581 106.847 35.5201V29.5306C104.816 30.5488 102.486 31.1777 99.5291 31.1777C96.6318 31.1777 94.063 30.1595 93.7344 26.6257H108.341C108.341 26.2364 108.4 24.6791 108.4 23.9604ZM93.6448 21.1153C93.6448 17.7313 95.7058 16.3237 97.5876 16.3237C99.4097 16.3237 101.351 17.7313 101.351 21.1153H93.6448Z"
+                                fill="#32325D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M74.6776 10.2444C71.7504 10.2444 69.8686 11.622 68.8232 12.5803L68.4349 10.7235H61.8635V45.6424L69.3309 44.0552L69.3608 35.58C70.4361 36.3586 72.0192 37.4667 74.6477 37.4667C79.9944 37.4667 84.8632 33.1542 84.8632 23.6609C84.8333 14.9761 79.9048 10.2444 74.6776 10.2444ZM72.8854 30.8782C71.1231 30.8782 70.0777 30.2493 69.3608 29.4707L69.3309 18.3602C70.1076 17.4917 71.1829 16.8927 72.8854 16.8927C75.6036 16.8927 77.4854 19.9474 77.4854 23.8705C77.4854 27.8835 75.6334 30.8782 72.8854 30.8782Z"
+                                fill="#32325D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.42665 18.3602C8.42665 17.1922 9.38248 16.743 10.9656 16.743C13.2357 16.743 16.1032 17.4318 18.3733 18.6596V11.622C15.8941 10.6337 13.4448 10.2444 10.9656 10.2444C4.90203 10.2444 0.869629 13.4188 0.869629 18.7195C0.869629 26.9851 12.2201 25.6674 12.2201 29.2311C12.2201 30.6087 11.0253 31.0579 9.35261 31.0579C6.87343 31.0579 3.70725 30.0397 1.19819 28.6621V35.7896C3.97607 36.9875 6.78382 37.4966 9.35261 37.4966C15.5655 37.4966 19.8369 34.412 19.8369 29.0514C19.807 20.1271 8.42665 21.7143 8.42665 18.3602Z"
+                                fill="#32325D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M28.6186 4.25488L21.3304 5.81216L21.3005 29.8001C21.3005 34.2324 24.6161 37.4967 29.0368 37.4967C31.4861 37.4967 33.2783 37.0474 34.264 36.5084V30.429C33.3082 30.8184 28.5887 32.1959 28.5887 27.7637V17.1323H34.264V10.7535H28.5887L28.6186 4.25488Z"
+                                fill="#32325D" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M51.5884 8.47752L59.0856 6.86036V0.781006L51.5884 2.36823V8.47752Z" fill="#32325D" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h3 class="title title--third">Reviews</h3>
+                <h2 class="reviews__title title title--second">What our customers are saying</h2>
+            </div>
+            <div class="reviews__bottom reviews__swiper">
+                <div class="swiper-navigation">
+                    <button class="swiper-btn swiper-btn--prev js-swiper-prev" aria-label="Previous slide"></button>
+                    <button class="swiper-btn swiper-btn--next js-swiper-next" aria-label="Next slide"></button>
+                </div>
+
+                <div class="swiper-container reviews__swiper-container js-reviews-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews__swiper-slide">
+                            <p class="reviews__swiper-text text">
+                                Our team has been working at&nbsp;frispes for almost 2&nbsp;months because our office
+                                still closed. During working at&nbsp;frispes, we&nbsp;feel a&nbsp;new experience,
+                                we&nbsp;can feel working with a&nbsp;beautiful, modern, and comfortable space. And cozy
+                                cafe with high-speed internet in&nbsp;there. Thank you for frispes and team.
+                            </p>
+                            <div class="reviews__swiper-customer">
+                                <div class="reviews__swiper-customer-photo">
+                                    <img class="reviews__swiper-customer-icon" src="img/reviews/customer-1.jpeg"
+                                        alt="Photo of Pedro Ibanez">
+                                </div>
+                                <div class="reviews__swiper-customer-info">
+                                    <span class="reviews__swiper-customer-name">Pedro Ibanez</span>
+                                    <span class="reviews__swiper-customer-position text">UI&nbsp;Designer
+                                        at&nbsp;Google</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__swiper-slide">
+                            <p class="reviews__swiper-text text">
+                                The high-speed internet at&nbsp;frispes was so&nbsp;amazing. I&nbsp;can get best
+                                experience when running video call with my&nbsp;clients. Frispes has spacious and safe
+                                parking area, that&rsquo;s what i&nbsp;need because i&nbsp;used to&nbsp;work
+                                as&nbsp;freelancer for a&nbsp;long time.
+                            </p>
+                            <div class="reviews__swiper-customer">
+                                <div class="reviews__swiper-customer-photo">
+                                    <img class="reviews__swiper-customer-icon" src="img/reviews/customer-2.jpeg"
+                                        alt="Photo of Raymond Thual">
+                                </div>
+                                <div class="reviews__swiper-customer-info">
+                                    <span class="reviews__swiper-customer-name">Raymond Thual</span>
+                                    <span class="reviews__swiper-customer-position text">Professional Freelancer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__swiper-slide">
+                            <p class="reviews__swiper-text text">
+                                Just three words : Frispes is&nbsp;Awesome!
+                            </p>
+                            <div class="reviews__swiper-customer">
+                                <div class="reviews__swiper-customer-photo">
+                                    <img class="reviews__swiper-customer-icon" src="img/reviews/customer-3.jpeg"
+                                        alt="Photo of Yuli Berlian">
+                                </div>
+                                <div class="reviews__swiper-customer-info">
+                                    <span class="reviews__swiper-customer-name">Yuli Berlian</span>
+                                    <span class="reviews__swiper-customer-position text">IOS Dev
+                                        at&nbsp;Tokopedia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__swiper-slide">
+                            <p class="reviews__swiper-text text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum totam amet odio suscipit
+                                molestias? In deleniti consectetur tempore porro error minima optio modi repellendus,
+                                ea, perspiciatis quas molestiae ipsam temporibus.
+                            </p>
+                            <div class="reviews__swiper-customer">
+                                <div class="reviews__swiper-customer-photo">
+                                    <img class="reviews__swiper-customer-icon" src="img/reviews/empty-customer.jpeg"
+                                        alt="Photo of Jane Doe">
+                                </div>
+                                <div class="reviews__swiper-customer-info">
+                                    <span class="reviews__swiper-customer-name">Jane Doe</span>
+                                    <span class="reviews__swiper-customer-position text">Frontend Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews__custom-pagination js-reviews-fraction">
+                    <div class="swiper-progressbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faq__container">
+                    <h2 class="faq__title title title--second">Find the answers to&nbsp;anything you need in&nbsp;our
+                        Help Center
+                    </h2>
+
+                    <ul class="faq__list reset-list">
+                        <li class="faq__item">
+                            <a class="faq__link" href="#">
+                                How do&nbsp;I know if&nbsp;a&nbsp;space is&nbsp;available?
+                            </a>
+                            <span class="btn btn--orange"></span>
+                        </li>
+                        <li class="faq__item">
+                            <a class="faq__link" href="#">
+                                How do&nbsp;i&nbsp;book a&nbsp;space?
+                            </a>
+                            <span class="btn btn--orange"></span>
+                        </li>
+                        <li class="faq__item">
+                            <a class="faq__link" href="#">
+                                How do&nbsp;reviews work?
+                            </a>
+                            <span class="btn btn--orange"></span>
+                        </li>
+                    </ul>
+
+                    <a class="link link--orange" href="#">More questions</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="newsfeed">
+            <div class="container">
+                <div class="newsfeed__info">
+                    <h5 class="newsfeed__title title title--second">News, events and insights for you</h5>
+                    <a class="newsfeed__link link link--orange" href="#">See more</a>
+                </div>
+
+                <div class="newsfeed__articles">
+                    <article class="article article__main">
+                        <div class="article__main-cover">
+                            <img class="article__img" src="img/articles/cover-1.jpeg" alt="Conference venue">
+                        </div>
+                        <div class="article__main-content">
+                            <a class="article__link" href="#" target="_blank">
+                                <h5 class="article__main-title">Google I&nbsp;/ O&nbsp;2020 news update</h5>
+                            </a>
+                            <p class="article__main-text text text--gray">
+                                Out of&nbsp;concern for the health and safety of&nbsp;our developers, employees, and
+                                local
+                                communities&nbsp;&mdash; and in&nbsp;line with recent ...
+                            </p>
+                            <div class="article__main-author">
+                                <div class="article__main-author-photo">
+                                    <img class="article__main-author-avatar" src="img/articles/author-1.jpeg" alt="">
+                                </div>
+                                <div class="article__main-author-info">
+                                    <span class="article__main-author-name">Sundar Pichai</span>
+                                    <span class="article__main-author-position text text--gray">CEO at Google</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article">
+                        <div class="article__cover">
+                            <img class="article__img" src="img/articles/cover-2.jpeg" alt="Workspace table">
+                        </div>
+                        <div class="article__content">
+                            <a class="article__link" href="#" target="_blank">
+                                <h5 class="article__title">Minimal workspace for inspirations</h5>
+                            </a>
+                            <span class="article__author text text--gray">Anthony Masional</span>
+                        </div>
+                    </article>
+
+                    <article class="article">
+                        <div class="article__cover">
+                            <img class="article__img" src="img/articles/cover-3.jpeg" alt="A man reading his book">
+                        </div>
+                        <div class="article__content">
+                            <a class="article__link" href="#" target="_blank">
+                                <h5 class="article__title">Does productivity increase when working remotely?</h5>
+                            </a>
+                            <span class="article__author text text--gray">Franck Martin</span>
+                        </div>
+                    </article>
+
+                    <article class="article">
+                        <div class="article__cover">
+                            <img class="article__img" src="img/articles/cover-4.jpeg"
+                                alt="Colleagues working at the laptop">
+                        </div>
+                        <div class="article__content">
+                            <a class="article__link" href="#" target="_blank">
+                                <h5 class="article__title">Morning routine to&nbsp;boost your mood</h5>
+                            </a>
+                            <span class="article__author text text--gray">Elizabeth Swan</span>
+                        </div>
+                    </article>
+
+                    <article class="article">
+                        <div class="article__cover">
+                            <img class="article__img" src="img/articles/cover-5.jpeg" alt="Co-working room">
+                        </div>
+                        <div class="article__content">
+                            <a class="article__link" href="#" target="_blank">
+                                <h5 class="article__title">5+&nbsp;tips to&nbsp;find comfortable co-working space</h5>
+                            </a>
+                            <span class="article__author text text--gray">Mykola Ilschenko</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+
+                <div class="footer__left">
+                    <h1 class="footer__title title title--main">Frispes</h1>
+                    <p class="footer__text text">
+                        We&nbsp;offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many
+                        more for
+                        your
+                        best workspaces and meetings
+                    </p>
+                    <ul class="socials reset-list">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" target="_blank" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 12C2 7.80863 2 5.71294 3.05041 4.26718C3.38964 3.80026 3.80026 3.38964 4.26718 3.05041C5.71294 2 7.80863 2 12 2C16.1914 2 18.2871 2 19.7328 3.05041C20.1997 3.38964 20.6104 3.80026 20.9496 4.26718C22 5.71294 22 7.80863 22 12C22 16.1914 22 18.2871 20.9496 19.7328C20.6104 20.1997 20.1997 20.6104 19.7328 20.9496C18.2871 22 16.1914 22 12 22C7.80863 22 5.71294 22 4.26718 20.9496C3.80026 20.6104 3.38964 20.1997 3.05041 19.7328C2 18.2871 2 16.1914 2 12ZM12 6.70588C9.07632 6.70588 6.70588 9.07632 6.70588 12C6.70588 14.9237 9.07632 17.2941 12 17.2941C14.9237 17.2941 17.2941 14.9237 17.2941 12C17.2941 9.07632 14.9237 6.70588 12 6.70588ZM12 15.3088C10.1762 15.3088 8.69118 13.8238 8.69118 12C8.69118 10.1749 10.1762 8.69118 12 8.69118C13.8238 8.69118 15.3088 10.1749 15.3088 12C15.3088 13.8238 13.8238 15.3088 12 15.3088ZM18.3966 6.30883C18.3966 6.69844 18.0808 7.01427 17.6912 7.01427C17.3016 7.01427 16.9857 6.69844 16.9857 6.30883C16.9857 5.91923 17.3016 5.60339 17.6912 5.60339C18.0808 5.60339 18.3966 5.91923 18.3966 6.30883Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" target="_blank" aria-label="YouTube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M21.3903 4.11407C22.4182 4.39093 23.2288 5.20135 23.5055 6.22948C24.0197 8.1074 23.9999 12.0218 23.9999 12.0218C23.9999 12.0218 23.9999 15.9163 23.5057 17.7944C23.2288 18.8223 22.4184 19.6329 21.3903 19.9096C19.5122 20.404 12 20.404 12 20.404C12 20.404 4.50731 20.404 2.60961 19.89C1.58148 19.6131 0.771054 18.8025 0.4942 17.7746C0 15.9163 0 12.002 0 12.002C0 12.002 0 8.1074 0.4942 6.22948C0.770871 5.20153 1.60125 4.37115 2.60943 4.09448C4.48753 3.6001 11.9998 3.6001 11.9998 3.6001C11.9998 3.6001 19.5122 3.6001 21.3903 4.11407ZM15.8549 12.0021L9.60788 15.6001V8.40404L15.8549 12.0021Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" target="_blank" aria-label="Facebook">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.563 1.00458L14.7857 1C11.6655 1 9.64916 3.12509 9.64916 6.41423V8.91055H6.85674C6.61544 8.91055 6.42004 9.1115 6.42004 9.35937V12.9763C6.42004 13.2241 6.61567 13.4249 6.85674 13.4249H9.64916V22.5514C9.64916 22.7993 9.84455 23 10.0859 23H13.7292C13.9705 23 14.1659 22.799 14.1659 22.5514V13.4249H17.4308C17.6721 13.4249 17.8675 13.2241 17.8675 12.9763L17.8689 9.35937C17.8689 9.24036 17.8228 9.12638 17.741 9.04215C17.6592 8.95793 17.5478 8.91055 17.432 8.91055H14.1659V6.79439C14.1659 5.77727 14.4018 5.26094 15.6916 5.26094L17.5625 5.26025C17.8036 5.26025 17.999 5.0593 17.999 4.81166V1.45317C17.999 1.20576 17.8038 1.00504 17.563 1.00458Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__spaces">
+                        <span class="footer__list-title">Spaces</span>
+                        <ul class="footer__list reset-list">
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Co-working spaces</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Meeting rooms</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Event spaces</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Child playground</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Cafe &amp;&nbsp;resto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__company">
+                        <span class="footer__list-title">Company</span>
+                        <ul class="footer__list reset-list">
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__support">
+                        <span class="footer__list-title">Support</span>
+                        <ul class="footer__list reset-list">
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link text text--white" href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contacts">
+                        <span class="footer__list-title">Contact Us</span>
+                        <ul class="footer__list reset-list">
+                            <li class="footer__item">
+                                <span class="footer__item-type text text--white">E.</span>
+                                <a class="footer__link text text--white"
+                                    href="mailto:Hello@frispes.com">Hello@frispes.com</a>
+                            </li>
+                            <li class="footer__item">
+                                <span class="footer__item-type text text--white">A.</span>
+                                <span class="text text--white">
+                                    Jalan Jayakatwang No.301 Ngasem, Kediri
+                                </span>
+                            </li>
+                            <li class="footer__item">
+                                <span class="footer__item-type text text--white">P.</span>
+                                <a class="footer__link text text--white" href="tel:+6282334670000">(+62) 82334670000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

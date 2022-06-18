@@ -1,0 +1,121 @@
+.burger {
+    --burger-width: 30px;
+    --burger-height: 20px;
+    --burger-line-height: 2px;
+    width: var(--burger-width);
+    height: var(--burger-height);
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: var(--ebony-clay);
+    position: relative;
+    cursor: pointer;
+}
+
+.burger::before,
+.burger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    -webkit-transition: top var(--short), -webkit-transform var(--short);
+    transition: top var(--short), -webkit-transform var(--short);
+    -o-transition: transform var(--short), top var(--short);
+    transition: transform var(--short), top var(--short);
+    transition: transform var(--short), top var(--short), -webkit-transform var(--short);
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    top: calc(100% - var(--burger-line-height));
+}
+
+.burger__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    -webkit-transition: -webkit-transform var(--short);
+    transition: -webkit-transform var(--short);
+    -o-transition: transform var(--short);
+    transition: transform var(--short);
+    transition: transform var(--short), -webkit-transform var(--short);
+}
+
+.burger--active .burger__line {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.burger--active::before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.burger--active::after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+.burger:hover {
+    color: var(--grenadier);
+}
+
+@-webkit-keyframes navigation-open {
+    from {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+}
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes navigation-open {
+    from {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+}
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes navigation-close {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes navigation-close {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}

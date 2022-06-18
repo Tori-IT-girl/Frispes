@@ -1,0 +1,24 @@
+/* general */
+
+@import url('modules/_global.css');
+@import url('modules/_variables.css');
+@import url('modules/_burger.css');
+@import url('modules/_link.css');
+@import url('modules/_btn.css');
+@import url('modules/_article.css');
+@import url('modules/_socials.css');
+@import url('modules/_swiper.css');
+
+/* sections */
+
+@import url('modules/_header.css');
+@import url('modules/_hero.css');
+@import url('modules/_spaces.css');
+@import url('modules/_about.css');
+@import url('modules/_facilities.css');
+@import url('modules/_gallery.css');
+@import url('modules/_customers.css');
+@import url('modules/_reviews.css');
+@import url('modules/_faq.css');
+@import url('modules/_newsfeed.css');
+@import url('modules/_footer.css');
