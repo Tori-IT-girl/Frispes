@@ -1,6 +1,6 @@
 # Frispes. Co-working spaces
 
-[Explore the landing](viktoriya-lev.github.io/frispes/)
+[Explore the landing](https://viktoriya-lev.github.io/Frispes/)
 
 ## Features
 - BEM approach
